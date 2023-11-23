@@ -1,0 +1,31 @@
+ul li a {
+	display: block;
+	width: 200px;
+	overflow: hidden;
+}
+
+img {
+	max-width: 100%; /* Asegúrate de que la imagen ocupe todo el ancho de su contenedor */
+	transition: transform 0.3s ease; /* Agrega una transición suave al efecto de escala */
+}
+
+img:hover {
+	transform: scale(1.5);
+}
+
+ul li {
+	list-style: none;
+	margin: 10px;
+}
+
+ul {
+	display: flex;
+	flex-direction: row;
+}
+footer a {
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	font-size: 20px;
+}
+
