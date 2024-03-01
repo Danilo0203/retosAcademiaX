@@ -21,7 +21,7 @@ const buttonEditar = (btnEditar) => {
 };
 const buttonEliminar = (btnCrear, btnEliminar, groupComponent) => {
   btnEliminar.addEventListener("click", () => {
-    if (groupComponent.children.length === 1) btnCrear.disabled = false;
+    if (groupComponent.children.length !== 1) btnCrear.disabled = false;
     if (!groupComponent.children[0]) return;
     groupComponent.removeChild(groupComponent.children[0]);
   });
